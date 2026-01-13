@@ -44,6 +44,19 @@ Pipe the output of `terraform plan` into `landscape` to reformat the output.
 ```bash
 terraform plan ... | landscape
 ```
+## No color output (CI-friendly)
+
+By default, terraform-landscape may emit ANSI color codes to improve readability
+in interactive terminals.
+
+For CI pipelines, logs, or markdown output, colored output can be undesirable.
+You can disable all ANSI coloring using the `--no-color` flag.
+
+Example:
+
+```bash
+terraform plan -no-color | terraform-landscape --no-color
+
 
 ## Docker
 
