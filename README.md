@@ -6,6 +6,12 @@
 Terraform Landscape is a tool for reformatting the output of `terraform plan`
 to be easier to read and understand.
 
+## Overview
+
+terraform-landscape is a CLI tool that transforms raw `terraform plan` output
+into a human-readable format. It is commonly used in CI pipelines and pull
+requests to make infrastructure changes easier to review and understand.
+
 #### Before
 <img src="./doc/before.png" width="65%" alt="Original Terraform plan output" />
 
